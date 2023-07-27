@@ -1,9 +1,7 @@
 import React from 'react'
 
-const GetStarted = () => {
-  return (
-    <div>GetStarted</div>
-  )
-}
+const GetStarted = () => (
+  <div className=""></div>
+)
 
 export default GetStarted
