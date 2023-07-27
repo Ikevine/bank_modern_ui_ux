@@ -19,18 +19,30 @@ const Hero = () => (
          </div>
 
          <div className="flex flex-row items-center justify-center w-full">
-           <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-white'>
+           <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] leading-[75px] ss:leading-[100px] text-white'>
               The Next <br className='sm:block hidden'/> {" "}
               <span className='text-gradient'>Generation</span> {" "}
-               Payment Method
            </h1>
-
            {/* getStarted */}
            <div className="hidden ss:flex md:mr-4 mr-0">
              <GetStarted/>
            </div>
-           
          </div>
+         <h1 className='w-full font-poppins font-semibold ss:text-[68px] text-[52px] leading-[75px] ss:leading-[100px] text-white'>
+              <span>Payment Method</span>
+          </h1>
+          <p className={`${style.paragraph} max-w-[470px] mt-5`}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sed doloribus dolorum voluptas. Esse rerum in, consectetur vel aliquam eaque deleniti harum culpa sequi optio magnam ut quas eius eum!</p>
+      </div>
+      {/* right div */}
+      <div className={`flex-1 flex ${style.flexCenter} md:my-0 my-10 relative`}>
+         <img src={robot} alt="billing"  className='w-[100%] h-[100%] relative z-5'/>
+         <div className='absolute z-[0] pink__gradient top-0 w-[40%] h-[35%]'/>
+         <div className='absolute z-[1] white__gradient rounded-full bottom-0 w-[80%] h-[80%]'/>
+         <div className='absolute z-0 right-30 bottom-20 blue-gradient top-0 w-[50%] h-[50%]'/>
+      </div>
+
+      <div className={`ss:hidden ${style.flexCenter}`}>
+        <GetStarted/>
       </div>
   </section>
 )
